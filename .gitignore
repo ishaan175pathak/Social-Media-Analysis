@@ -5,3 +5,4 @@ Sentiment140.zip
 /Trend-Analysis/package.json 
 /Trend-Analysis/package-lock.json 
 /dataset/Sentiment140/ 
+/**/__pycache__/ 
