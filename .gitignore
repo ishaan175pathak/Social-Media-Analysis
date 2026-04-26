@@ -1,9 +1,5 @@
 /.venv/ 
-/.vscode/ 
 Sentiment140.zip 
-/outputs_full/ 
-/Trend-Analysis/package.json 
-/Trend-Analysis/package-lock.json 
 /dataset/Sentiment140/ 
 /**/__pycache__/ 
 /outputs/ 
