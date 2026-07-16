@@ -71,50 +71,11 @@ This project addresses that challenge by:
 
 ### High-Level Data Flow
 
-<<<<<<< HEAD
 ![High Level Data Flow](High%20level%20design.png)
 
 ### Architecture Diagram
 
 ![System Architecture](architecture.png)
-=======
-```text
-
-Raw Social Media Dataset
-            │
-            ▼
-     Spark Data Loader
-            │
-            ▼
-   Data Cleaning & ETL
-            │
-            ▼
-   Feature Engineering
-            │
-            ▼
-           PCA
-            │
-            ▼
-      K-Means Clustering
-            │
-            ▼
-    Sentiment Mapping
-            │
-            ▼
- Reporting & Visualization
-
-````
-
-### Architecture Diagram
-
-> Placeholder: Insert architecture diagram here
-
-```markdown
-
-![System Architecture](docs/images/system_architecture.png)
-
-```
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 
 ---
 ## Technology Stack
@@ -134,19 +95,12 @@ Raw Social Media Dataset
 
 ### Source
 
-<<<<<<< HEAD
 [Sentiment140 Dataset Link](https://www.kaggle.com/datasets/kazanova/sentiment140)
-=======
-Sentiment140 Dataset
-
-> Placeholder: Add dataset source link
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 
 ### Dataset Characteristics
 
 | Attribute     | Value                |
 | ------------- | -------------------- |
-<<<<<<< HEAD
 | Total Records | 1,600,000            |
 | Data Type     | Tweets               |
 | Labels        | Sentiment Categories |
@@ -154,13 +108,6 @@ Sentiment140 Dataset
 | Size          | 238.8 MB             |
 | Columns       | 6                    |   
 
-=======
-| Total Records | [INSERT VALUE]       |
-| Data Type     | Tweets               |
-| Labels        | Sentiment Categories |
-| Format        | CSV                  |
-| Size          | [INSERT VALUE]       |
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 ### Sample Dataset
 
 | Tweet                    | Sentiment |
@@ -181,15 +128,10 @@ Social-Media-Analysis/
 ├── exports/
 │   └── Intermediate Spark outputs
 │
-<<<<<<< HEAD
-├── outputs_full/
-│   ├── clustered_full_dataset.csv
-=======
 ├── outputs/
 │   ├── clustered_full_dataset.csv
 │   ├── dominant_sentiment_per_cluster.csv
 │   └── visual reports
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 │
 ├── script/
 │   ├── main.py
@@ -219,13 +161,7 @@ Social-Media-Analysis/
 Responsibilities:
 
 * Load large datasets efficiently
-<<<<<<< HEAD
 * Create Spark DataFrames
-=======
-
-* Create Spark DataFrames
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Manage distributed data access
 
 ---
@@ -236,19 +172,9 @@ Responsibilities:
 Operations:
 
 * Remove noise
-<<<<<<< HEAD
 * Handle missing values
 * Normalize text
 * Standardize formatting
-=======
-
-* Handle missing values
-
-* Normalize text
-
-* Standardize formatting
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Prepare features for modeling
 
 ---
@@ -257,16 +183,8 @@ Operations:
 Examples:
 
 * Tokenization
-<<<<<<< HEAD
 * Vectorization
 * Numerical transformation
-=======
-
-* Vectorization
-
-* Numerical transformation
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Feature selection
 
 ---
@@ -277,16 +195,8 @@ Examples:
 Principal Component Analysis (PCA) is used to:
 
 * Reduce feature dimensionality
-<<<<<<< HEAD
 * Improve computational efficiency
 * Retain meaningful variance
-=======
-
-* Improve computational efficiency
-
-* Retain meaningful variance
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Improve clustering quality
 
 ### Clustering
@@ -294,44 +204,12 @@ Principal Component Analysis (PCA) is used to:
 K-Means clustering is applied to:
 
 * Discover hidden patterns
-<<<<<<< HEAD
 * Group similar social media posts
-=======
-
-* Group similar social media posts
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Identify behavioral and sentiment-based segments
 
 ### ML Workflow
 
-<<<<<<< HEAD
 ![ML Flow](ML%20Workflow.png)
-=======
-```text
-
-Tweets
-   │
-   ▼
-Preprocessing
-   │
-   ▼
-Feature Engineering
-   │
-   ▼
-  PCA
-   │
-   ▼
-K-Means
-   │
-   ▼
-Cluster Assignment
-   │
-   ▼
-Sentiment Mapping
-
-```
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 
 ---
 ## Analytics Layer
@@ -339,21 +217,12 @@ Sentiment Mapping
 The analytics engine calculates:
 
 * Cluster distributions
-<<<<<<< HEAD
 * Sentiment percentages
 * Dominant cluster emotions
-=======
-
-* Sentiment percentages
-
-* Dominant cluster emotions
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * Cluster-level statistics
 
 ### Metrics Table
 
-<<<<<<< HEAD
 | Metric                 | Value    |
 | ---------------------- | -------- |
 | Total Tweets Processed | 1,583,571|
@@ -368,23 +237,11 @@ The analytics engine calculates:
 | 3       | 86,032          | 115,075       | Positive           | 57.22%     |
 | 4       | 184,522         | 212,254       | Positive           | 53.49%     |
 
-=======
-> Placeholder: Add actual project metrics
-
-| Metric                 | Value    |
-| ---------------------- | -------- |
-| Total Tweets Processed | [INSERT] |
-| Number of Clusters     | [INSERT] |
-| PCA Components         | [INSERT] |
-| Processing Time        | [INSERT] |
-| Silhouette Score       | [INSERT] |
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 ---
 ## Results & Visualizations
 
 ### Sentiment Distribution
 
-<<<<<<< HEAD
 ![Sentiment Distribution](visual_ref/sentiment_distribution.png)
 
 ### Summary Dashboard
@@ -392,54 +249,18 @@ The analytics engine calculates:
 ![Sentiment Trends over time](visual_ref/sentiment_trend_over_time.png)
 ![Tweets per Day](visual_ref/tweets_per_day.png)
 ![Tweets per Hour](visual_ref/tweets_per_hour.png)
-=======
-> Placeholder
-
-```markdown
-
-![Sentiment Distribution](docs/images/sentiment_distribution.png)
-
-```
-
-### PCA Cluster Visualization
-
-> Placeholder
-
-```markdown
-
-![PCA Visualization](docs/images/pca_clusters.png)
-
-```
-
-### Cluster Summary Dashboard
-
-> Placeholder
-
-```markdown
-
-![Cluster Dashboard](docs/images/dashboard.png)
-
-```
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 
 ---
 ## Generated Outputs
 
 | Output File                        | Description                                      |
-<<<<<<< HEAD
 |------------------------------------|--------------------------------------------------|
-=======
-| ---------------------------------- | ------------------------------------------------ |
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 | clustered_full_dataset.csv         | Final processed dataset with cluster assignments |
 | dominant_sentiment_per_cluster.csv | Dominant sentiment per cluster                   |
 | cluster_sentiment_distribution.png | Sentiment visualization                          |
 | pca_components.csv                 | PCA feature outputs                              |
 | cluster_centroids.csv              | Cluster center information                       |
-<<<<<<< HEAD
 
-=======
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 ---
 ## Installation
 
@@ -453,7 +274,7 @@ The analytics engine calculates:
 ### Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ishaan175pathak/Social-Media-Analysis.git
 cd Social-Media-Analysis
 ```
 
@@ -506,10 +327,7 @@ Spark was selected because:
 * Handles large datasets efficiently
 * Reduces memory bottlenecks
 * Enables future streaming integration
-<<<<<<< HEAD
 
-=======
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 ### Why PCA?
 
 PCA helps:
@@ -530,35 +348,18 @@ K-Means provides:
 ## Future Enhancements
 
 * Real-time tweet ingestion using Kafka
-<<<<<<< HEAD
 * Spark Structured Streaming integration
 * Interactive Streamlit dashboard
 * BERT-based sentiment classification
 * Automated model retraining
 * Cloud deployment on AWS
 * Docker containerization
-=======
-
-* Spark Structured Streaming integration
-
-* Interactive Streamlit dashboard
-
-* BERT-based sentiment classification
-
-* Automated model retraining
-
-* Cloud deployment on AWS
-
-* Docker containerization
-
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 * CI/CD automation
 
 ---
 ## Engineering Highlights
 
 * Built a distributed Spark-based ETL pipeline
-<<<<<<< HEAD
 * Implemented machine learning workflow using PCA and K-Means
 * Designed modular and scalable project architecture
 * Generated automated sentiment analytics reports
@@ -574,39 +375,6 @@ K-Means provides:
 - <b>Social Listening </b>: Monitor conversations around specific topics or campaigns.
 ---
 
-=======
-
-* Implemented machine learning workflow using PCA and K-Means
-
-* Designed modular and scalable project architecture
-
-* Generated automated sentiment analytics reports
-
-* Developed reusable preprocessing and analytics components
-
-* Demonstrated large-scale text processing capabilities
-
----
-## Potential Use Cases
-
-### Brand Monitoring
-
-Track customer sentiment toward products and services.
-
-### Market Research
-
-Identify emerging trends and audience interests.
-
-### Customer Experience Analytics
-
-Analyze large volumes of customer feedback.
-
-### Social Listening
-
-Monitor conversations around specific topics or campaigns.
-
----
->>>>>>> 90263e9788b916fe9e411fbb54ce52ba1156eed3
 ## Contact
 
 **Ishaan Pathak**
