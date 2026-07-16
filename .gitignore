@@ -1,0 +1,8 @@
+/.venv/ 
+Sentiment140.zip 
+/dataset/Sentiment140/ 
+/**/__pycache__/ 
+/outputs/ 
+/outputs_full/ 
+/exports/
+\script\__init__.py 
