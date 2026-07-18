@@ -381,4 +381,9 @@ K-Means provides:
 
 LinkedIn: [https://www.linkedin.com/in/ishaan-pathak-1017951a4/](https://www.linkedin.com/in/ishaan-pathak-1017951a4/)
 
+## Contributor
+
+**Pooja Borade**
+[LinkedIn](https://www.linkedin.com/in/pooja-madhukar-borade-618618210/)
+
 ---
